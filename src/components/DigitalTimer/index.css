@@ -1,0 +1,210 @@
+/* Write your CSS here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff, #cffcf1, #cffcf1, #defafe);
+  min-height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  .app-container {
+    background-image: linear-gradient(
+      to right,
+      #ffffff,
+      #cffcf1,
+      #cffcf1,
+      #defafe
+    );
+  }
+}
+.title {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.digital-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .digital-timer-container {
+    flex-direction: row;
+    max-width: 1140px;
+  }
+}
+.timer-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 250px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 576px) {
+  .timer-display-container {
+    width: 450px;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .timer-display-container {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .timer-display-container {
+    width: 600px;
+    height: 600px;
+  }
+}
+.elipsed-timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+@media screen and (min-width: 576px) {
+  .elipsed-timer-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .elipsed-timer-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+.elisped-timer {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .elisped-timer {
+    font-size: 48px;
+  }
+}
+.timer-state {
+  color: #1e293b;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .timer-state {
+    font-size: 24px;
+  }
+}
+.controle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.timer-controle-container {
+  display: flex;
+  align-items: center;
+}
+.timer-controle-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin-right: 16px;
+  margin-left: 16px;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+}
+.timer-controle-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 576px) {
+  .timer-controle-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+  }
+}
+.timer-controle-label {
+  color: #1e293b;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+@media screen and (min-width: 576px) {
+  .timer-controle-label {
+    font-size: 32px;
+  }
+}
+.timer-limit-controle-container {
+  display: flex;
+  align-items: center;
+}
+
+.limit-label {
+  color: #1e293b;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.timer-limit-controle {
+  display: flex;
+  align-items: center;
+}
+.limit-controle-button {
+  color: #1e293b;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 500;
+  border: none;
+  margin: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.limit-label-value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+}
+.limit-value {
+  text-align: center;
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  width: 100px;
+  border-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+  background-image: linear-gradient(to right, #00f5a0, #00d9f5);
+}
